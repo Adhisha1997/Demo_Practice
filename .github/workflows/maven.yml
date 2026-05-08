@@ -21,7 +21,16 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: API Automation
-      run: mvn clean test
+      run: mvn clean test 
+      
+    - name: Upload a Build Artifact
+      if: always()
+      uses: actions/upload-artifact@v7.0.1
+      with:
+         name: Surefire Report
+         path: target/surefire-reports/
+         retention-days: 10
+       
     
 
   
