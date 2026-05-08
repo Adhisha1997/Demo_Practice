@@ -3,8 +3,8 @@
 
   <test name="Inwarrentary flow collection">
     <classes>
-      <class name="com.api.test.Demo_Login_Test"/>
-      <class name="com.api.test.Demo_UserDetails_Test"/>
+      <class name="com.Demo.Api.test.Demo_Login_Test"/>
+      <class name="com.Demo.Api.test.Demo_UserDetails_Test"/>
       
     </classes>
   </test>
