@@ -26,7 +26,7 @@ public class Demo_ConfigureManager {
 		switch (env) {
 		case "QA" -> path = "/src/test/resources/Configure/config.qa.properties";
 		case "DEV" -> path = "/src/test/resources/Configure/config.DEV.properties";
-		default -> path = "/src/test/resources/Configure/config.qa.properties";
+		default -> path = "/src/test/resources/Configure/config.uat.properties";
 		}
 
 		File prop_file = new File(System.getProperty("user.dir") + path);
